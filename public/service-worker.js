@@ -1,15 +1,18 @@
-const APP_PREFIX = 'MoneySmart-';     
-const VERSION = 'version_01';
-const CACHE_NAME = APP_PREFIX + VERSION;
+const CACHE_NAME = 'my-site-cache-v1';
+const DATA_CACHE_NAME = 'data-cache-v1';
 
 const FILES_TO_CACHE =[
+    '/',
+    './manifest.json',
     "./index.html",
-    "./css/style.css",
+    "./css/styles.css",
     "./js/idb.js",
     "./js/index.js",
-    "../routes/api.js"
-];
+    "./api/transaction",
+    
 
+
+];
 
 
 //Install the service worker
@@ -89,3 +92,4 @@ self.addEventListener('fetch', function(evt) {
 
 
 });
+

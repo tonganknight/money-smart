@@ -12,6 +12,7 @@ fetch("/api/transaction")
     populateTotal();
     populateTable();
     populateChart();
+    
   });
 
 function populateTotal() {
